@@ -69,14 +69,14 @@ export default function TextForm(props) {
         // console.log("On change");
         setText(event.target.value);
     }
-    const [text, setText] = useState('Enter Text here');
+    const [text, setText] = useState('');
     return (
         <>
             <div className="container"style={{color : props.mode==='dark'?'white':'#042743'}}>
                 <h1>{props.heading}</h1>
 
                 <div className="mb-3">
-                    <textarea className="form-control" value={text} onChange={handleOnchange} style={{backgroundColor: props.mode==='light'?'white':'grey',color:props.mode==='dark'?'white':'#042743'}} id="myBox" rows="8"></textarea>
+                    <textarea className="form-control" value={text} placeholder='Enter text here' onChange={handleOnchange} style={{backgroundColor: props.mode==='light'?'white':'grey',color:props.mode==='dark'?'white':'#042743'}} id="myBox" rows="8"></textarea>
                 </div>
                 <button className="btn btn-primary mx-1 my-1" onClick={handleUpClick}>Convert to Uppercase</button>
                 <button className="btn btn-primary mx-1 my-1" onClick={handleLoClick}>Convert to Lowercase</button>
