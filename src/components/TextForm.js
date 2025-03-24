@@ -28,7 +28,7 @@ export default function TextForm(props) {
           }
         }
         setText(newText)
-        props.showAlert("Special Characters are Renoved!","success");
+        props.showAlert("Special Characters are Removed!","success");
         };
         const handleRemoveNumber = () => {
             let newText = "";
