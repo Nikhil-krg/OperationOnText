@@ -33,7 +33,7 @@ export default function TextForm(props) {
         const handleRemoveNumber = () => {
             let newText = "";
             for (let i = 0; i < text.length; i++) {
-              if ((text[i] >= "0" && text[i] <= "9") === 1) {
+              if ((text[i] >= "0" && text[i] <= "9") == 0) {
                 newText += text[i];
               }
             }
